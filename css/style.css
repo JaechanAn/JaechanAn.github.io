@@ -120,6 +120,22 @@ section { margin-bottom: 3.5rem; }
 
 .hero { padding: 0.5rem 0 0; }
 
+.hero-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.hero-photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid var(--border);
+}
+
 .hero h1 {
   font-size: 1.85rem;
   font-weight: 700;
@@ -131,7 +147,7 @@ section { margin-bottom: 3.5rem; }
 .hero-role {
   font-size: 0.9rem;
   color: var(--text-muted);
-  margin-bottom: 1.25rem;
+  margin-bottom: 0;
   line-height: 1.5;
 }
 
@@ -404,6 +420,7 @@ footer a:hover { color: var(--accent); }
   .nav-links { gap: 1rem; }
   .content { padding: 2rem 1.25rem 3.5rem; }
   .hero h1 { font-size: 1.5rem; }
+  .hero-top { flex-direction: column; align-items: flex-start; gap: 1rem; }
   .teaching-item { flex-direction: column; gap: 0.1rem; }
   .teaching-date { margin-left: 0; }
   .post-item { flex-direction: column; gap: 0.15rem; }
